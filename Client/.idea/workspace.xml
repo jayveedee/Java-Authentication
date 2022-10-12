@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="004eb083-02b0-45ba-8e08-199016920c96" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RMIService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/src/RMIService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/src/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/src/rmi/RMIServant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RMIService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/rmi/RMIService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/RMIService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rmi/RMIService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

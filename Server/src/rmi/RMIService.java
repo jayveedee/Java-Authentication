@@ -1,8 +1,11 @@
+package rmi;
+
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 
 public interface RMIService extends Remote {
 
+    String helloWorld(String hello) throws RemoteException;
     // prints file filename on the specified printer
     String print(String filename, String printer) throws RemoteException;
     // lists the print queue for a given printer on the user's display in lines of the form <job number>   <file name>

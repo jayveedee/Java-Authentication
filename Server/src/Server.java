@@ -1,63 +1,16 @@
+import rmi.RMIServant;
+
 import java.rmi.RemoteException;
-import java.rmi.server.RMIClientSocketFactory;
-import java.rmi.server.RMIServerSocketFactory;
-import java.rmi.server.UnicastRemoteObject;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
 
-public class Server extends UnicastRemoteObject implements RMIService {
+public class Server {
 
-    protected Server() throws RemoteException {
-    }
+    private static final int PORT = 60000;
+    private static final String SERVANT = "RMIServant";
 
-    protected Server(int port) throws RemoteException {
-        super(port);
-    }
-
-    protected Server(int port, RMIClientSocketFactory csf, RMIServerSocketFactory ssf) throws RemoteException {
-        super(port, csf, ssf);
-    }
-
-    @Override
-    public String print(String filename, String printer) throws RemoteException {
-        return null;
-    }
-
-    @Override
-    public void queue(String printer) throws RemoteException {
-
-    }
-
-    @Override
-    public void topQueue(String printer, int job) throws RemoteException {
-
-    }
-
-    @Override
-    public void start() throws RemoteException {
-
-    }
-
-    @Override
-    public void stop() throws RemoteException {
-
-    }
-
-    @Override
-    public void restart() throws RemoteException {
-
-    }
-
-    @Override
-    public String status(String printer) throws RemoteException {
-        return null;
-    }
-
-    @Override
-    public void readConfig(String parameter) throws RemoteException {
-
-    }
-
-    @Override
-    public void setConfig(String parameter, String value) throws RemoteException {
-
+    public static void main(String[] args) throws RemoteException {
+        Registry registry = LocateRegistry.createRegistry(PORT);
+        registry.rebind(SERVANT, new RMIServant());
     }
 }
